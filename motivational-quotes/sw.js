@@ -1,5 +1,5 @@
-const CACHE="motivational-quotes-v3";
-const CORE=["./","./index.html","./style.css","./script.js","./quotes.json","./manifest.webmanifest","../dawn-bg.png","../water-bg.png","../moonlight-bg.png"];
+const CACHE="motivational-quotes-v4";
+const CORE=["./","./index.html","./style.css","./script.js","./quotes.json","./manifest.webmanifest","../dawn-bg.webp","../water-bg.webp","../moonlight-bg.webp"];
 
 self.addEventListener("install",event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting()));
